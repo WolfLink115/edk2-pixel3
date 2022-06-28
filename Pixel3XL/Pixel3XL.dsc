@@ -93,9 +93,9 @@
 
   gEfiMdeModulePkgTokenSpaceGuid.PcdFirmwareVersionString|L"Alpha"
 
-  # System Memory (4GB)
-  gArmTokenSpaceGuid.PcdSystemMemoryBase|0x80000000
-  gArmTokenSpaceGuid.PcdSystemMemorySize|0xe0000000
+  # System Memory (2GB)
+  gArmTokenSpaceGuid.PcdSystemMemoryBase|0x00000000
+  gArmTokenSpaceGuid.PcdSystemMemorySize|0x80000000
 
   # We only boot one processor here!
   gArmPlatformTokenSpaceGuid.PcdCoreCount|1
@@ -133,9 +133,9 @@
   #
   gEfiMdeModulePkgTokenSpaceGuid.PcdEmuVariableNvModeEnable|TRUE
 
-  gPixel3XLTokenSpaceGuid.PcdMipiFrameBufferAddress|0x9d400000
-  gPixel3XLTokenSpaceGuid.PcdMipiFrameBufferWidth|1440
-  gPixel3XLTokenSpaceGuid.PcdMipiFrameBufferHeight|2960
+  gPixel3XLTokenSpaceGuid.PcdMipiFrameBufferAddress|0x03400000
+  gPixel3XLTokenSpaceGuid.PcdMipiFrameBufferWidth|1080
+  gPixel3XLTokenSpaceGuid.PcdMipiFrameBufferHeight|1920
 
   gEfiMdeModulePkgTokenSpaceGuid.PcdAcpiExposedTableVersions|0x20
 

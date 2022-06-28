@@ -25,7 +25,7 @@
 ################################################################################
 
 [FD.PIXEL3XL_UEFI]
-BaseAddress   = 0xd0000000|gArmTokenSpaceGuid.PcdFdBaseAddress  # The base address of the Firmware in NOR Flash.
+BaseAddress   = 0x00080000|gArmTokenSpaceGuid.PcdFdBaseAddress  # The base address of the Firmware in NOR Flash.
 Size          = 0x00200000|gArmTokenSpaceGuid.PcdFdSize         # The size in bytes of the FLASH Device
 ErasePolarity = 1
 
@@ -147,7 +147,7 @@ READ_LOCK_STATUS   = TRUE
   #
   INF EmbeddedPkg/Drivers/VirtualKeyboardDxe/VirtualKeyboardDxe.inf
 
-  INF Pixel3XL/Pixel3XLDxe/Pixel3XLDxe.inf
+  INF Pixel3XL/Drivers/MSM8992PkgDxe/MSM8992PkgDxe.inf
   INF Pixel3XL/SimpleFbDxe/SimpleFbDxe.inf
 
 
