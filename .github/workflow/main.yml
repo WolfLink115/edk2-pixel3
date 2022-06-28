@@ -2,11 +2,11 @@ name: Build UEFI
 
 on:
   push:
-    branches: [ "WolfLink115-gh-actions" ]
+    branches: [ "master" ]
   pull_request:
-    branches: [ "WolfLink115-gh-actions" ]
+    branches: [ "master" ]
   workflow_dispatch:
-    branches: [ "WolfLink115-gh-actions" ]
+    branches: [ "master" ]
 
 jobs:
   build:
