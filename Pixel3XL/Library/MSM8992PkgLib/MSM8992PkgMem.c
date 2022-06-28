@@ -36,18 +36,16 @@ STATIC struct MSM8992PkgReservedMemory {
   EFI_PHYSICAL_ADDRESS         Offset;
   EFI_PHYSICAL_ADDRESS         Size;
 } MSM8992PkgReservedMemoryBuffer [] = {
-/**  { 0x86000000, 0x00300000 },    // tz_apps_region
-  { 0x86300000, 0x00100000 },    // smem_region
-  { 0x86400000, 0x00280000 },    // tz/hyp_region
-  { 0x86700000, 0x06C00000 },    // MPSS/EFS/DHMS/PIL_region
-**/
-/*
-  { 0x85A00000, 0x00E00000 },    // tz-apps_region
-  { 0x86800000, 0x05400000 },    // mpss_region
-  { 0x8bc00000, 0x00200000 },    // gps_region
-  { 0x8be00000, 0x00600000 },    // wcnss_region
-  { 0x8c400000, 0x00600000 },    // venus_region
-  { 0x03400000, 0x01200000 },    //fb_region, don't use because it's broken :( */
+//  { 0x86000000, 0x00300000 },    // tz_apps_region
+  { 0x06a00000, 0x00200000 },    // smem_region
+//  { 0x86400000, 0x00280000 },    // tz/hyp_region
+  { 0x0000094c, 0x00000200 },    // MPSS/EFS/DHMS/PIL_region
+//  { 0x85A00000, 0x00E00000 },    // tz-apps_region
+//  { 0x86800000, 0x05400000 },    // mpss_region
+//  { 0x8bc00000, 0x00200000 },    // gps_region
+//  { 0x8be00000, 0x00600000 },    // wcnss_region
+  { 0xfdce0000, 0x00004000 },    // venus_region
+  { 0x03401000, 0x02200000 },    //fb_region
 };
 
 /**
