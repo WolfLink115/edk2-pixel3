@@ -45,7 +45,7 @@ STATIC struct MSM8992PkgReservedMemory {
 //  { 0x8bc00000, 0x00200000 },    // gps_region
 //  { 0x8be00000, 0x00600000 },    // wcnss_region
   { 0xfdce0000, 0x00004000 },    // venus_region
-  { 0x03401000, 0x02200000 },    //fb_region
+  { 0x03400000, 0x02200000 },    //fb_region
 };
 
 /**
